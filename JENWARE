@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CHAP11-ASSIGMENT</title>
+<style type="text/css">
+body{
+    font-family:Century Gothic;
+    background-color:#e6e6ff;}
+h4,h2{
+ color: #8000ff;
+
+}
+em{
+color:FE4D00;
+
+}
+strong{
+ color:#7F8C8D;}
+h4{
+background-color:#CACFD2;}
+
+h4+p{
+background-color:#CACFD2;}
+
+.glassware{
+  background-color:white;}
+
+.caption{
+font-style:italic;
+color:orange;
+
+}
+.footer{
+ font-size:77%;
+color:#8000ff;
+}
+</style>
+
+</head>
+<body>
+<p> <img src="C:\Users\Indus\Desktop\TASK7\PIC\header.png" width="450px" height="90px"/><strong>JenWARE...Make IT Personal</strong>
+<br/>
+Special ocassion calls for special gifts.The jenware line of houseware can be persnalized for the one you love...the<br/>
+ happycouple celebrating new life together...the
+recent graduate or...a new baby</p>
+<h4>Testimonials</h4>
+<p>"The JenWARE onesies were the hit of the baby shower.The custom letter "a" and handmade quality made this gift really stand out among the cookie-cutter clothes from the department store."<br/>
+Thanks for the cool JenWARE barwere.I couldn't wait until I found "Mr.Right",so i just bought a set for myself!My friends always want to know.where I got them so I send them to your site."</p>
+<div class="glassware">
+<h2>GlassWARE</h2>
+<image src="C:\Users\Indus\Desktop\TASK7\PIC\glasses.jpg"/ width="20%">
+<p><span class="caption">The perfect wedding gift.</span>Our highest quality glassware is sandblasted by hand with alpahabet/image of your choice.Choose from 26 letters and 24 typefaces.Custom designs are also available for an additional design charge.Allow<br/>
+4 to 6 weeks for delivery.<br/>
+<button>Go to the GlassWARE page</button>
+<h2>BabyWARE</h2>
+<img src="C:\Users\Indus\Desktop\TASK7\PIC\unnamed.jpg" width="30%"/><br/>
+<p><span class ="caption">Tired of sickly-sweet?</span>These onesies with oversized latters in bold,bright patterns are a welcome change from the useual pastel fare.Monogrammed pants and baby shoes are also available .tell us the initial  and mix and match from 6<br/>
+fun fabric patterns and 8 edging colors.allow 2 to 4 weeks for delivery.Sizes: 3mos,6mos,and 12mos.</p>
+<button>Go to the GlassWARE page</button>
+</div>
+<div class="footer">
+<center>
+All content copyright &copy Jennifer Robbins and Jenware, Inc.</center>
+</div>
+	
+</body>
+</html>
