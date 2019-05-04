@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>21-25-assigment</title>
+</head>
+<body>
+    <script language="javascript">
+        //q1//
+        var firstnme=prompt("enter first name");
+        var lastnme=prompt("enter last name");
+        var fullname=(firstnme+"-"+lastnme);
+        alert("welcome \n "+fullname);
+        
+        //q2
+        var model=prompt("enter your favourite phone model");
+        var length=model.length;
+        alert("your favourite phone is : "+model+"\n"+"length of string is :"+length);
+        
+        //q3
+        var string="pakistani"
+        var indexofn=string.indexOf("n");
+        alert("string : "+string+"\n"+"index of 'n' :" + indexofn);
+        
+     //q4
+     var string = "Hello World"
+     var lastindex=string.lastIndexOf("l");
+     alert("string : "+string+"\n"+"last index of 'l' :"+lastindex);
+     
+     //q5
+     var string="pakistani";
+     var thrdindex=string.charAt(3);
+     alert(thrdindex);
+     
+     //q6
+     var text1="hassan";
+     var text2="jafri";
+     var combine=text1.concat("",text2);
+     alert("welcome \n"+combine);
+     
+    //q7
+    var text="hyderabad"
+    var txt=text.replace(/hyder/g,"islam");
+    alert("BEFORE text= hyderabad \n "+"AFTER repalcement  : "+txt);
+    
+   //q8
+   var t="Ali and Sami are best friends.They play cricket and football together";
+   var t2=t.replace(/and/g,"&");
+   alert("before text: Ali and Sami are best friends.They play cricket and football together \n"+"After text : "+t2);
+   
+  //q9
+  var str="472";
+  var con =Number(str);
+  var t=typeof(con);
+  alert("value :"+con+"\n type: "+t);
+ 
+  var con1=t.toString();
+  var t1= typeof(con1);
+  alert("value :"+str+"\n type: "+t1);
+  
+  //q10
+  var usrinput=prompt("ENTER INPUT is lowercase or any other format");
+  var convert=usrinput.toUpperCase();
+  alert(convert);
+  
+ //q11
+   var str = 'we have, we will';
+	str = str.toLowerCase().split(' ');
+	for(var i=0; i<str.length; i++){
+		str[i] = str[i].charAt(0).toUpperCase() +str[i].slice(1);
+	}
+	
+	console.log(str);
+var res = str.map(word => {
+	document.write(word)
+})
+    
+   //q12
+   var num=35.36
+   var n= num + '';
+   n=n.replace('.','');
+   n=parseInt(n);
+   n=n.toString();
+   alert("input number :" +num +"\n AFTer removal of dot num to string is :" +n);
+   
+   //q13
+   var username=prompt("Enter user name");
+   for(var i=0;i<username.length;i++){
+     if(username.charAt(i)==="!"|| username.charAt(i)==="," || username.charAt(i)==="." || username.charAt(i)==="@")
+   {
+       alert(" enter a valid username ")
+   }
+   }
+   
+  //q14
+       var  A = ["cake", "apple pie", "cookie", "chips", "patties"]
+       var  B =prompt("Welcome to ABC Bakery.what do you want to order \n sir/ma'am?");
+       B=B.toLowerCase();
+       var  bollean=false;
+      for(var i=0;i<A.length;i++)
+       {  if(B===A.length[i])
+           {
+             bollean=true;
+             break;
+           }
+           else{
+               bollean=false;
+               
+           }
+        }
+        if(bollean=true)
+        {
+            alert("item available in our bakery");
+        }
+        else{
+            alert("item not available in our bakery");
+
+        }
+        
+       //Q15
+       var password=prompt("enter password");
+       var char=password.charCodeAt(0);
+       if(( char>=10 && char<=99) || password.length>7){
+           alert("enter valid password");
+
+       }
+       
+      //q16 
+       var university = "University of Karachi";
+       var splt=university.split("");
+       document.write(splt+"<br>");
+       
+      //q17
+      var chr="pakistan";
+      var lastchar=chr.charAt(chr.length-1);
+      alert("Input string :"+chr+"\n Result string :"+lastchar);
+      
+     //q18
+     var setnce="the quick brown fox jumps over the lazy dog";
+     var mtch=setnce.match(/the/g).length;
+     alert("TEXT  :"+setnce +"\n there are : "+mtch+"  occurrence(s) of word the ");
+     
+
+       
+    
+    
+     
+   
+
+   
+   
+  
+    
+    </script>
+
+    
+</body>
+</html>

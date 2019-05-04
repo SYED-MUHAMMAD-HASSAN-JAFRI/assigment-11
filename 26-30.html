@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="JAVASCRIPT">
+        //ASSIGMENT CHAP 26-30 MATHS METHODS
+        //Q1
+         var number=prompt("enter number");
+         var number1=Math.round(number);
+         var number2=Math.floor(number);
+         var number3=Math.ceil(number);
+         alert("number :"+number+"\n Round off value  : "+ number1+"\n floor value :"+number2+"\n  Ceil value :"+number3);
+         
+         //q2
+         var number=prompt("enter number");
+         var number1=Math.round(number);
+         var number2=Math.floor(number);
+         var number3=Math.ceil(number);
+         alert("number :"+number+"\n Round off value  : "+ number1+"\n floor value :"+number2+"\n  Ceil value :"+number3);
+         
+         //q3
+         var number=prompt("enter number");
+         var number1=Math.abs(number);
+         alert("Given number by user :  "+number+"\n Absolute value   :  "+number1);
+        
+         
+         //q4
+         var randomnumber;  //3 is default value
+         //var rolldice=prompt("Enter how many time you want to roll dice",3);
+         //HUMNA RANDOMNUMBER USE KIA JSE HMARA PASS ALG RANDOM GENERATE HONGN//
+         //LEKIN WO SARA 0-1 KA DARMIYAN HONGN IS LIA HUMNA MATH.CEIL USE KIA KIUN KA JO BHI CHEX 0.3YA US KA BAD HOGI USE WO 1 MAI CONVERT KRDETA HAI AGR MATH .FLOOR USE KRTA HUMRA PASS //
+         //JSE 0.376986B BLAA BLAA!!!TOU YA FLOOR KA FUNCTION ISE 0 KRDETA //6 JO HAI DICE KA SIZE HAI.
+        //for(var i=1;i<=rolldice;i++){
+         randomnumber=Math.ceil(Math.random()*6)
+         alert("Random dice value  :: "+randomnumber);
+         //document.writeln(randomnumber);
+        //}
+        
+        //q5
+        var randomncoin=Math.ceil(Math.random()*2);
+        alert(randomnumber);
+        if(randomcoin===1){
+            alert("Random coin value : Tail");
+
+        }
+        else if(randomcoin===2){
+         alert("Random coin value  : Heads")}
+        
+         //q6
+         var randomnumber=Math.floor(Math.random()*100);
+         alert("Random number between 1 and 100 is  :"+randomnumber);
+         
+         //q7
+         var custwght=prompt("enter weight in kgs");
+         var weight=parseInt(custwght);
+         alert("Enter weight is : "+custwght+"\n custome weight is :  "+weight+"kilograms")
+         
+         //q8
+         var entenmber=prompt("enter any number b/w 1-10");
+         var randomnumber=Math.ceil(Math.random()*10);
+         if(entenmber===randomnumber)
+         {
+             alert("conratulation you judge the correct number");
+         }
+         else
+         {
+             alert("try-again");
+
+         }
+        
+
+
+        
+
+         
+
+
+         
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

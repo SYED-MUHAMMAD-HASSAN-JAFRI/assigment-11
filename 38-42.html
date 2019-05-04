@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>38-42</title>
+</head>
+<body>
+    <p></p>
+    <script lang="javascript">
+        //Assignment  38-44 | FUNCTIONS| SWITCH | WHILE.. DO-WHILE | 
+        //q1
+        //custom function asa function jo ap khud likhta ho javascript provide nai krta.
+        // a raised to b
+        function value(a,b)
+        {
+            var power=Math.pow(a,b);
+            return alert("Result A raised to B :  "+power);
+        }
+        value(5,3);
+        //q2
+        //a  leap year, occurring once every four years,
+        // which has 366 days including 29 February as an intercalary day.
+        function leap_year(){
+            var year=prompt("Enter current year");
+            year=parseInt(year);
+            if( ( year % 4 ==0) && (year % 100!==0) || (year % 400==0) ){
+                alert("Entered year was "+year +"\n The year is leap year");
+            }
+            else{
+                alert("Entered year is "+year+"\n The year is not leap year");
+            }
+        }
+        leap_year();
+        //q3
+       function calc_of_triangle(a,b,c){
+             var s=(a+b+c)/2;
+             var area=s*(s-a)*(s-b)*(s-c);
+             return area;
+       }
+       function area_of_traingle(){
+           var result=calc_of_triangle(2,3,4);
+           document.write("area of triangle :"+result);
+       }
+       area_of_traingle();
+       //q4
+       var sub1=prompt("Enter marks of english");
+       sub1=parseFloat(sub1);
+       var sub2=prompt("Enter mark of urdu");
+       sub2=parseFloat(sub2);
+       var sub3=prompt("Enter marks of Maths");
+       sub3=parseFloat(sub3);
+       function average(){
+           var avg=(sub1+sub2+sub3)/3;
+           return avg;
+       }
+       function percentage(){
+           var total_marks_of_3_subj=300;
+           var total=sub1+sub2+sub3;
+           var perc=(total/total_marks_of_3_subj)*100;
+           return perc;
+       }
+       function main_function(){
+           var Result=average();
+           var Result2=percentage();
+           document.write("Subject 1 marks are  = "+sub1);
+           document.write("<br>");
+           document.write("Subject 2 marks are  = "+sub2);
+           document.write("<br>");
+           document.write("Subject 3 marks are  = "+sub3);
+           document.write("<br>");
+           document.write("Average Marks of subjects are  = "+Result);
+           document.write("<br>");
+           document.write("Percentage of subjects are     = "+Result2);}
+           main_function();
+           //q5
+           //indexof functionality wiithout using index of 
+           function position(string,index){
+            string = string.split(' ');
+
+               var inex;
+               for(var i=0;i<string.length;++i){
+                   if(string[i]===index)
+                   { 
+                       return  i; 
+                   }
+               }
+            
+           }
+          alert( position("i am hassan","hassan"));
+          
+          //q6
+          function remove_vowel(string){
+              return string.replace(/[aeiou]/gi,'');
+          }
+          //this will remove all vowels in sentence
+          document.write("input sentence after removal of all vowels :BELOW");
+          document.write("<br>");
+          document.write(remove_vowel("Their social life was church, they had no television and even when Carmen had attended college, they had requested that she stay at home every night instead of living in a dorm."));
+          
+          //Q7
+        /* function occurence_vowel(str,letter){
+              str=str.split('');
+              var counttt= 0;
+                     for (var i = 0; i < str.length; i++) 
+                     {
+                         switch(str.charAt(i) == letter) 
+                      { case "ae":
+                        counttt+= 1;
+                        break;
+                        case "ea":
+                        counttt+= 1;
+                        break;
+                        case "ui":
+                        counttt+= 1;
+                        break;
+                        default:
+                        alert("nothing found");
+
+
+
+
+
+                      }
+                     }
+                      return counttt;
+                       } 
+                    console.log(occurence_vowel("“Pleases read this application and give me gratuity” Such occurrences are ea, ea, ui. ","ae"));*/
+                    //Q8
+                    function distance(){
+                        var distan_in_km=prompt("Enter value in km");
+                        distan_in_km=parseFloat(distan_in_km);
+                        var meter=(distan_in_km*1000);
+                        var feet=(distan_in_km * 3280.839895);
+                        var inches=distan_in_km/(Math.pow(2.54,-5));
+                        var centemeters=distan_in_km*100000;
+                        document.write("Entered distance in km is :  "+distan_in_km+" km ");
+                        document.write("<br>")
+                        document.write(" Distance in meter is :  "+meter+" m ");
+                        document.write("<br>")
+                        document.write(" Distance in feet is :  "+feet+" ft ");
+                        document.write("<br>")
+                        document.write(" Distance in inches is :  "+inches+" inch");
+                        document.write("<br>")
+                        document.write(" Distance in centimeter is :  "+centemeters+" cm ");
+                        document.write("<br>")}
+                        distance();
+                        //q9
+                        var timework=prompt("enter time worked");
+                        var overtime;
+                        var overtimepay=0;
+                        if(timework>40){
+                            overtime=timework-40;
+                            overtimepay=overtimepay+(12*overtime);
+                            alert("overtime pay is "+overtimepay);
+                        }
+                        else{
+                            alert("nothing");
+                        }
+                        //q10
+                        var amount=prompt("Enter amount to be widrawn");
+                        amount=parseFloat(amount);
+                        var note_of_100=amount/100;
+                        var notes_of_50=((amount %100)/50);
+                        var notes_of_10=(((amount %100)%50)/10)
+                        var remaining_notes=(((amount %100)%50)%10);
+                        document.write("Notes of 100 : "+note_of_100);
+                        document.write("<br>");
+                        document.write("Notes of 50 : "+notes_of_50);
+                        document.write("<br>");
+                        document.write("Notes of 10 : "+notes_of_10);
+                        document.write("<br>");
+                        document.write("Remaining notes  : "+remaining_notes);
+                        document.write("<br>");
+                        document.write("you will have : "+note_of_100+"hundred notes  "+notes_of_50+" fifty notes "+notes_of_10+" ten notes")
+
+
+
+                    
+
+          
+       
+
+
+
+
+       
+
+        
+
+
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

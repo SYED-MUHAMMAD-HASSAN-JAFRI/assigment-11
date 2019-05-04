@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35-38</title>
+</head>
+<body>
+    <script lang="javascript">
+        //ASSIGNMENT 35-38 FUNCTION
+        //Q1
+        function currenttime(){
+         var datetime=new Date();
+         alert(datetime);
+        }
+        currenttime();
+        
+        //q2
+        function greet(){
+         var first_name=prompt("enter first name");
+         var last_name=prompt("enter last name");
+         alert("Welcome " +first_name +" "+last_name);
+
+        }
+        greet();
+        
+        //q3
+            function Add(){
+            var input_1=prompt("Enter first number");
+            input_1=parseFloat(input_1);
+            var input_2=prompt("Enter second number");
+            input_2=parseFloat(input_2);
+            return alert(input_1+input_2);
+            }
+            Add();
+            
+            //q4
+            function Calculator(num1,num2,op)
+            {       if(op=== "+")
+                    {  
+                    return alert(num1+num2) ;
+                    }
+                    else if(op=== "-")
+                    {
+                        return alert(num1-num2);
+                    }
+                    else if(op==="*")
+                    {
+                        return alert(num1*num2);
+                    }
+                    else if(op==="/")
+                    {
+                        return alert(num1/num2);
+                    }
+                    else
+                    {
+                  return(alert("invalid operator"));
+                    }
+                    }    
+                     Calculator(2,2,"+"); 
+                     
+        //q5
+        function square(base,exp)
+        { 
+           var squ_re=Math.pow(base,exp);
+           alert("square of number is :"+squ_re);
+        }
+        square(3,2);
+        
+        //q6
+        function factorial(num){
+            for(var i=num-1;i>=1;i--)
+            {
+                return alert(num=num*i);
+            }
+        }
+        factorial(4);
+        
+        //q7
+        function counter(num1,num2){
+            for(var i=num1;i<=num2;i++){
+                document.write(i+"<br>");
+            }
+        }
+        counter(1,10);
+        
+        //q8
+        //ya configurable function hota hain jis mai function ki chainning hoti hai 
+        //inner outer per dependent hota hain.
+        function hypotenuse(base, perpendiculer) {
+               function square(num)
+                { return num*num;
+                 }
+               return Math.sqrt(square(base) + square(perpendiculer));
+                }
+             function secondFunction() {
+               var result;
+               result = hypotenuse(1,2);
+               document.write ( "Hypotenuse of triangle "+result );
+
+               }
+               secondFunction();
+        
+               
+               //q9
+               function Area_of_rectangle(width,hieght=2){
+                   return width*hieght;
+                   }
+                  alert(Area_of_rectangle(6));
+                  
+               //q10
+               function pallindrome(){
+                   var st_ring=prompt("enter any string");
+                   var convert=st_ring.split('').reverse().join('');
+                   if(convert===st_ring)
+                   {
+                       alert("string is a pallindrome"+"\n THE WORD INPUT WAS  : " +st_ring);
+                    
+                   }
+                   else{alert("not a pallindrome");}
+                   
+               }
+               pallindrome();
+               //q11
+               function letter_conversion(){
+                var str = 'the quick brown fox';
+	            str = str.toLowerCase().split(' ');
+	            for(var i=0; i<str.length; i++){
+		        str[i] = str[i].charAt(0).toUpperCase() +str[i].slice(1);
+	                }
+	
+	             console.log(str);
+                 var res = str.map(word => {
+	             document.write(word)
+                  })}
+                  letter_conversion();
+                  //q12
+                  function find_longest_word(str)
+                  {
+                   var array1 = str.match(/\w[a-z]{0,}/gi);
+                   var result = array1[0];
+                 for(var i= 1 ; i < array1.length ; i++)
+                    {
+                      if(result.length < array1[i].length)
+                   {
+                      result = array1[i];
+                    } 
+                   }
+                   return result;
+                     }
+                   document.write(find_longest_word('I hate hanger'));
+                   
+                   //q13
+                   function char_count(str, letter) 
+                  {
+                     var counttt= 0;
+                     for (var i = 0; i < str.length; i++) 
+                     {
+                         if (str.charAt(i) == letter) 
+                      {
+                        counttt+= 1;
+                      }
+                     }
+                      return counttt;
+                       }
+
+                     alert(char_count(' I am awwful dancer ', 'a'));
+                     
+                     //q14
+                     //The Geometrizer
+                     function calcCircumfrence(radius){
+                       // Circumference of circle = 2πr
+                         var circumfernce=2*Math.PI*radius;
+                         alert("CIRCUMFERENCE OF CIRCLE  : "+circumfernce);
+
+                     }
+                    
+                     function calcArea(radius)
+                     {
+                         // Area of circle = πr2
+                         var area=Math.PI*Math.pow(radius,2);
+                         alert( "Area of circle is :  "+area);
+
+                     }
+                     calcCircumfrence(6);
+                     calcArea(7);
+               
+
+               
+               
+              
+            
+               
+
+
+
+            
+            
+           
+           
+            
+
+       
+        
+
+              
+
+              
+                  
+                 
+                
+                  
+                  
+                  
+                
+
+                  
+                  
+                  
+              
+                  
+                  
+              
+             
+             
+             
+              
+
+
+                
+            
+           
+
+
+        
+
+
+
+        
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

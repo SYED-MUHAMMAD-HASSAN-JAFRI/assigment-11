@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>31-38</title>
+</head>
+<body>
+    <h1>K-Electric Bill</h1>
+    <script lang="javascript">
+        //Assigment 31-34 Date Methods And  function
+        //q1
+         var obj=new Date();
+         alert(obj);
+         //q2
+         var daynmes=["sun","mon","tue","wed","thurs","fri","sat"];
+         var now=new Date();
+         var theday=now.getDay();
+         var nameoftoday=daynmes[theday];
+         alert("TODAY IS "+nameoftoday);
+         // q3
+         var monthnmes=["jan","feb","march","aprail","may","june","july","aug","sep","oct","nov","dec"];
+         var now=new Date();
+         var thmnth=now.getMonth();
+         var currentmonth=monthnmes[thmnth];
+         alert("Current month "+currentmonth);
+         
+         //q4
+         var daynmes=["sunday","monday","tuesday","wedneseday","thursday","friday","saturday"];
+         var now=new Date();
+         var theday=now.getDay();
+         var nameoftoday=daynmes[theday];
+         var hassan= nameoftoday.toLowerCase().replace(/\b(\S{1,3})\S*/g, '$1').replace(/ /g, '_');
+         // var j=h.substring(0,3);
+         alert(nameoftoday+" \n after halfnme  :  "+hassan);
+         // console.log(j);
+         //q5
+         var now=new Date();
+         var theday=now.getDay();
+         alert(theday);
+         if(theday===6 || theday===0){
+
+             alert("It’s Fun day")
+         }
+         else
+         {
+             alert("normalday")
+         }
+         
+         //q6
+         var  now=new Date();
+         var  thedate=now.getDate();
+         alert(thedate);
+         if(thedate<16){
+             alert("First fiifteen days of the month")
+         }
+         else{
+            alert("Last days of the month");
+         }
+     
+     //AEK QUESTION REPEAT HUAWA HAI .
+
+     //Q6
+      var obj=new Date();
+     var millisecond=obj.getTime();
+     alert(obj + "\n  Ellapsed Milliseconds  Since January 1 1970  :"+millisecond+
+       "\n  Ellapsed Minutes  Since January 1 1970  :"+millisecond/60000);
+     
+     //q7
+     var obj=new Date();
+     var hour=obj.getHours();
+     if(hour<12){
+      alert(" it's AM");
+     }
+     else{
+         alert("it's PM");
+     }
+     
+     //q8
+     var obj=new Date("31-dec-2020");
+     alert(obj);
+     
+     //q9
+     var diffrence= new Date().getTime() - new Date("June 18, 2015 " ).getTime(); 
+     alert(diffrence+"  days have passed since 1st Ramadan ,2015");
+     
+     //q10
+     var dte=new Date("December 20 ,2017");
+     var curr=new Date();
+     var diff=curr.getTime()-dte.getTime();
+     //this is seconds b/w two dates
+     var secs=diff/1000;
+     //sec b/w dates
+     var dif=Math.abs(secs);
+     alert( "On reference date  "+dte+"\n"+dif+"  seconds has passed since beggening of  2017");
+     
+     //q11
+     var obj=new Date();
+     var previous_hour=new Date(obj.getTime()-1000*60*60);
+     alert("current Date  :"+obj+"\n"+"1 hour ago it was "+previous_hour);
+     
+     //q12
+     var obj=new Date();
+     var hundredyears=new Date(obj.getTime()-1000*60*60*24*365*100);
+     alert("current Date  : "+obj+"\n"+" 100 year  back it was  "+hundredyears);
+     
+     //q13
+     var age =prompt("Enter age");
+     var current=new Date();
+     var curryear=current.getUTCFullYear();
+     var year=curryear-age;
+     alert("Your age is : "+age+"\n"+"Your birth year  is  :"+year);
+     
+     //q14
+     var customer=prompt("Customer name");
+     var month=prompt("Enter Month");
+     var no_units=prompt("Enter no of units");
+     var cahrge_unit=prompt("Enter charge per unit");   //q14 
+     var net_amount=no_units*cahrge_unit;
+     var latePayment_surcharge=309.20;
+     var gros_amount=net_amount+latePayment_surcharge;
+     document.write("Customer Name : "+customer);
+     document.write("<br>  \n");
+     document.write("Month: "+month+"\n");
+     document.write("<br>  \n");
+     document.write("Number of units : "+no_units);
+     document.write("<br>  \n");
+     document.write("Charges per unit : "+cahrge_unit+"\n");
+     document.write("<br>  \n");
+     document.write("Net Amount Payable(within Due Date : "+net_amount);
+     document.write("<br>  \n")
+     document.write("Late payment surcharge  : "+latePayment_surcharge);
+     document.write("<br>  \n")
+     document.write("Gross Amount Payable(after Due Date) :"+gros_amount);
+     document.write("<br>  \n")
+
+
+
+    
+      
+     
+
+         
+
+        
+
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
